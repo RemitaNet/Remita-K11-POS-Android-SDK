@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_action_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:contentDescription="App Logo" />
+
+    <EditText
+        android:id="@+id/amountInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter amount in Naira"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="20dp"
+        android:inputType="numberDecimal"
+        android:padding="16dp"
+        android:background="@drawable/fancy_textfield"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/buttonReadCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read Card"
+        android:layout_below="@id/amountInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/fancy_button" />
+
+    <Button
+        android:id="@+id/buttonKeyExchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Key Exchange"
+        android:layout_below="@id/buttonReadCard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/fancy_button" />
+
+    <Button
+        android:id="@+id/transactionsList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Transaction List"
+        android:layout_below="@id/buttonKeyExchange"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/fancy_button" />
+
+
+    <Button
+        android:id="@+id/transactionDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Transaction Details"
+        android:layout_below="@id/transactionsList"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/fancy_button" />
+
+    <Button
+        android:id="@+id/buttonPrint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Print"
+        android:layout_below="@id/transactionDetails"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/fancy_button" />
+
+    <Button
+        android:id="@+id/buttonGetSerial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Serial Number"
+        android:layout_below="@id/buttonPrint"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/fancy_button" />
+</RelativeLayout>
+</ScrollView>
