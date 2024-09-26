@@ -262,7 +262,7 @@ Below is a list of responseCode that can be returned with their description.
 
 
 ## **Get Transaction Details**
-Takes **transRef as an input (String) and returns the details about the transaction (including its current status)
+Takes **transRef** as an input (String) and returns the details about the transaction (including its current status)
  ```Kotlin
 private fun getTransactionDetail(transRef: String) {
 	runBlocking {
